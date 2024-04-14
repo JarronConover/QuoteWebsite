@@ -1,0 +1,25 @@
+<html>
+    <header>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    </header>
+    <body id="body" data-list="false">
+        <div id="titleBar" data-list="false">
+            Quote Search
+        </div>
+        <form id="searchForm" onsubmit="event.preventDefault(); searchAuthor();" >
+            <input id="searchBar" placeholder="Search" data-list="false">
+        </form>
+        
+        <div id="randomDiv" data-visual="true">
+            <div id="randomQuote"></div>
+            <div id="randomAuthor"></div>
+        </div>
+        
+        <div id="quoteDiv"></div>
+    </body>
+</html>
